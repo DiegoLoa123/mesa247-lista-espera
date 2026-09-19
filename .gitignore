@@ -1,0 +1,68 @@
+
+# GENERAL / SYSTEM FILES
+.DS_Store
+Thumbs.db
+*.log
+
+
+
+
+# BACKEND (Python / FastAPI)
+# Entornos virtuales
+backend/.venv/
+backend/env/
+backend/venv/
+backend/ENV/
+
+# Caché de Python y herramientas de testing
+backend/**/__pycache__/
+backend/**/*.py[cod]
+backend/**/*$py.class
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+
+
+# Base de datos SQLite local (¡No subir datos de prueba ni bloqueos!)
+backend/test_waitlist.db
+backend/*.db-journal
+backend/*.sqlite3
+
+# Variables de entorno del backend
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+
+
+
+# FRONTEND (Vite / React / TypeScript)
+# Dependencias de Node
+frontend/node_modules/
+frontend/.pnpm-store/
+
+# Carpetas de compilación / producción
+frontend/dist/
+frontend/out/
+
+# Caché de herramientas de frontend
+frontend/.eslintcache
+frontend/.vite/
+frontend/.tsbuildinfo
+
+# Variables de entorno del frontend
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+!frontend/.env.example
+
+# IDEs y Editores (Opcional, aplica a todo el proyecto)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
